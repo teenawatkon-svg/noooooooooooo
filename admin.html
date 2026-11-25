@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>รายการสั่งซื้อ — Bami Bowl</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Bami Bowl</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <h1>รายการสั่งซื้อ</h1>
+        <hr class="rule">
+        <p class="lead">เรียงจากรายการล่าสุดขึ้นก่อน เลือกออเดอร์เพื่อพิมพ์ใบหยิบสินค้าและใบปะหน้าพัสดุ</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar">
+          <button type="button" id="btn-pick" class="btn">พิมพ์ใบหยิบสินค้า</button>
+          <button type="button" id="btn-labels" class="btn btn--solid">พิมพ์ใบปะหน้าพัสดุ</button>
+          <p class="hint">ใบปะหน้าขนาด 100×150 มม. (ตั้งค่ากระดาษในหน้าต่างพิมพ์ให้ตรงกับเครื่องพิมพ์)</p>
+        </div>
+
+        <div class="table-wrap">
+          <table id="ordersTable" class="data-table">
+            <thead>
+              <tr>
+                <th><input type="checkbox" id="selectAll" aria-label="เลือกทั้งหมด"></th>
+                <th>วันเวลา</th>
+                <th>เลขที่</th>
+                <th>ชื่อลูกค้า</th>
+                <th>เบอร์โทร</th>
+                <th>ที่อยู่จัดส่ง</th>
+                <th>รายการสินค้า</th>
+                <th>ยอดรวม</th>
+                <th>หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="print-area"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+[
+  {
+    "sku": "TYK-06",
+    "name": "บะหมี่กึ่งสำเร็จรูป รสต้มยำกุ้ง",
+    "flavor": "tomyum",
+    "flavorLabel": "ต้มยำกุ้ง",
+    "pack": "แพ็ค 6 ซอง",
+    "weight_g": 450,
+    "price": 69,
+    "image": "images/tomyum.jpg",
+    "description": "น้ำซุปรสต้มยำเข้มข้น เปรี้ยวเผ็ดกลมกล่อม ปรุงง่ายในไม่กี่นาที"
+  },
+  {
+    "sku": "TYK-30",
+    "name": "บะหมี่กึ่งสำเร็จรูป รสต้มยำกุ้ง",
+    "flavor": "tomyum",
+    "flavorLabel": "ต้มยำกุ้ง",
+    "pack": "ลัง 30 ซอง",
+    "weight_g": 2200,
+    "price": 299,
+    "image": "images/tomyum.jpg",
+    "description": "ขนาดคุ้มค่าสำหรับตุนไว้กินทั้งบ้านหรือสต็อกที่ร้าน"
+  },
+  {
+    "sku": "PMS-06",
+    "name": "บะหมี่กึ่งสำเร็จรูป รสหมูสับ",
+    "flavor": "pork",
+    "flavorLabel": "หมูสับ",
+    "pack": "แพ็ค 6 ซอง",
+    "weight_g": 450,
+    "price": 65,
+    "image": "images/pork.jpg",
+    "description": "น้ำซุปหอมนุ่มรสหมูสับ ทานง่าย อร่อยได้ทุกวัย"
+  },
+  {
+    "sku": "PMS-30",
+    "name": "บะหมี่กึ่งสำเร็จรูป รสหมูสับ",
+    "flavor": "pork",
+    "flavorLabel": "หมูสับ",
+    "pack": "ลัง 30 ซอง",
+    "weight_g": 2200,
+    "price": 279,
+    "image": "images/pork.jpg",
+    "description": "ขนาดคุ้มค่าสำหรับตุนไว้กินทั้งบ้านหรือสต็อกที่ร้าน"
+  }
+]

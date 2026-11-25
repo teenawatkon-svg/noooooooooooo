@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า — Bami Bowl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Bami Bowl</a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <h1>สั่งซื้อสินค้า</h1>
+        <hr class="rule">
+        <p class="lead">เลือกสินค้าและกรอกที่อยู่จัดส่ง</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="orderForm" class="form-card">
+          <div class="field">
+            <label for="customerName">ชื่อ-นามสกุลผู้รับ</label>
+            <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="contact">เบอร์โทรศัพท์</label>
+            <input type="tel" id="contact" name="contact" autocomplete="tel" inputmode="tel" pattern="[0-9+\- ]{9,15}" required>
+          </div>
+
+          <div class="field">
+            <label for="address">ที่อยู่จัดส่ง</label>
+            <textarea id="address" name="address" rows="3" autocomplete="street-address" required></textarea>
+            <p class="hint">กรอกบ้านเลขที่ ถนน แขวง/ตำบล เขต/อำเภอ จังหวัด และรหัสไปรษณีย์</p>
+          </div>
+
+          <div class="field">
+            <span class="label-text">เลือกสินค้า</span>
+            <div id="order-items" class="picker"><p>กำลังโหลดรายการสินค้า...</p></div>
+          </div>
+
+          <div class="field">
+            <label for="items">สรุปรายการสินค้า</label>
+            <textarea id="items" name="items" rows="2" readonly></textarea>
+            <input type="hidden" id="skuList" name="skuList">
+          </div>
+
+          <div class="field">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input type="number" id="total" name="total" readonly>
+          </div>
+
+          <div class="field">
+            <label for="note">หมายเหตุ</label>
+            <textarea id="note" name="note" rows="2"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--solid btn--block">ยืนยันสั่งซื้อ</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="logo">Bami Bowl</span>
+      <p>&copy; 2026 Bami Bowl. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
